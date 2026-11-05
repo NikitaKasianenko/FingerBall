@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075ad2b797360a6439855e6b9216c71a, type: 3}
+  m_Name: GameConfigInstaller
+  m_EditorClassIdentifier: Game.Runtime::Game.Configs.GameConfigInstaller
+  _ball:
+    <StartRadius>k__BackingField: 1
+    <CriticalRadius>k__BackingField: 0.32
+  _shot:
+    <MinVolume>k__BackingField: 0.035
+    <ChargeRate>k__BackingField: 0.05
+    <ChargeAcceleration>k__BackingField: 0.16
+    <FlightSpeed>k__BackingField: 18
+  _infection:
+    <RadiusScale>k__BackingField: 32
+    <VolumeExponent>k__BackingField: 1.5
+    <MaxRadius>k__BackingField: 2.6
+    <ChainDistance>k__BackingField: 0.85
+    <ChainReach>k__BackingField: 1.3
+  _level:
+    <Start>k__BackingField: {x: -2.4, y: 0}
+    <End>k__BackingField: {x: 2.4, y: 26}
+    <ObstacleRadius>k__BackingField: 0.33
+    <ObstacleHeight>k__BackingField: 1.5
+    <StartClearRadius>k__BackingField: 2.2
+    <DoorClearRadius>k__BackingField: 2.6
+    <HouseHalfWidth>k__BackingField: 2.5
+    <HouseDepth>k__BackingField: 3.6
+    <ClusterCount>k__BackingField: 4
+    <ClusterRadiusMin>k__BackingField: 0.9
+    <ClusterRadiusMax>k__BackingField: 1.5
+    <ClusterSpacing>k__BackingField: 0.72
+    <ClusterJitter>k__BackingField: 0.1
+    <ClusterAcrossOffset>k__BackingField: 0.5
+    <SingleCount>k__BackingField: 6
+    <SingleAcrossOffset>k__BackingField: 0.8
+    <SingleSeparation>k__BackingField: 1.4
+    <ContentMargin>k__BackingField: 1
+    <ForestMin>k__BackingField: {x: -12, y: -6}
+    <ForestMax>k__BackingField: {x: 12, y: 52}
+    <PathBandHalfWidth>k__BackingField: 1.6
+    <ForestCellSize>k__BackingField: 0.95
+    <ForestJitter>k__BackingField: 0.2
+    <ForestNoiseScale>k__BackingField: 0.2
+    <ForestSparseProbability>k__BackingField: 0.3
+    <ForestDenseProbability>k__BackingField: 0.95
+    <ForestDenseThreshold>k__BackingField: 0.45
+    <ForestBlend>k__BackingField: 0.1
+    <BackdropProbability>k__BackingField: 0.9
+  _balance:
+    <BaseSeed>k__BackingField: 1234
+    <SeedStride>k__BackingField: 7919
+    <StopGap>k__BackingField: 0.05
+    <Reserve>k__BackingField: 0.2
+    <MinBudgetUse>k__BackingField: 0.45
+    <MaxAttempts>k__BackingField: 40
+    <SolverCandidates>k__BackingField: 12
+    <SolverMaxShots>k__BackingField: 120
+  _motion:
+    <HopLength>k__BackingField: 1.3
+    <HopHeight>k__BackingField: 0.55
+    <HopDuration>k__BackingField: 0.3
+    <HopStretch>k__BackingField: 0.12
+    <IdleBounceHeight>k__BackingField: 0.06
+    <IdleBounceFrequency>k__BackingField: 2.4
+    <EnterDuration>k__BackingField: 0.7
+    <EnterDepth>k__BackingField: 1.6
+    <EnterEndScale>k__BackingField: 0.6
+    <DefeatWobble>k__BackingField: 0.18
+    <DefeatWobbleDuration>k__BackingField: 0.6
+    <DefeatShrinkDuration>k__BackingField: 0.25
+    <DefeatPause>k__BackingField: 0.35
+  _explosion:
+    <FuseTime>k__BackingField: 0.12
+    <ChainDelay>k__BackingField: 0.14
+    <DistanceDelay>k__BackingField: 0.05
+    <PulseScale>k__BackingField: 1.25
+    <SettleTime>k__BackingField: 0.15
+    <ParticlesPerObstacle>k__BackingField: 10
+    <ParticlesPerImpact>k__BackingField: 18
+    <ParticlesPerLanding>k__BackingField: 8
+    <ParticlesPerBallPop>k__BackingField: 36
+  _house:
+    <OpenDistance>k__BackingField: 5
+    <OpenDuration>k__BackingField: 0.45
+    <OpenAngle>k__BackingField: 105
+    <CloseDuration>k__BackingField: 0.25
+    <Squash>k__BackingField: 0.14
+    <SquashDuration>k__BackingField: 0.5
+    <CelebrationDuration>k__BackingField: 1.3
+  _camera:
+    <StopBeforeEnd>k__BackingField: 12
+    <FinishBlendTime>k__BackingField: 0.8
+    <ReturnBlendTime>k__BackingField: 0.9
+  _audio:
+    <ChargeLoop>k__BackingField: {fileID: 8300000, guid: cbae96c64916aa64799d3b4714b62419, type: 3}
+    <ChargeVolume>k__BackingField: 0.35
+    <ChargePitchMin>k__BackingField: 0.8
+    <ChargePitchMax>k__BackingField: 2.2
+    <Shoot>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 366334d085d2c4642b272794c5f35e13, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0.05
+    <Impact>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 6dac04c5e6c28634fbee223b1d52184b, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0.05
+    <ObstaclePop>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: fd182b2b82c74b6439ff587ed0ee1239, type: 3}
+      <Volume>k__BackingField: 0.6
+      <PitchJitter>k__BackingField: 0.08
+    <MinPopInterval>k__BackingField: 0.035
+    <Hop>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 1da40afdfdaf0a54ea07eccae2ca0440, type: 3}
+      <Volume>k__BackingField: 0.5
+      <PitchJitter>k__BackingField: 0.08
+    <Deflate>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: bcadd16998ee0ca4caf5b7dd9f999e5d, type: 3}
+      <Volume>k__BackingField: 0.9
+      <PitchJitter>k__BackingField: 0
+    <BallPop>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: fd182b2b82c74b6439ff587ed0ee1239, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0
+    <DoorOpen>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 747f6a29da429484dbc03d5b75e935d0, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0
+    <Win>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 9f367d8b9936e654a8cf5f4019d72f1e, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0
+    <Lose>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 2ec43db5e138b0f49a19072209c5bbdd, type: 3}
+      <Volume>k__BackingField: 1
+      <PitchJitter>k__BackingField: 0
+    <Click>k__BackingField:
+      <Clip>k__BackingField: {fileID: 8300000, guid: 4e7c9ae87cb66174c847364262e2ce28, type: 3}
+      <Volume>k__BackingField: 0.8
+      <PitchJitter>k__BackingField: 0

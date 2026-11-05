@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8329803555235079657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675450859634797527}
+  - component: {fileID: 6891510098796856348}
+  m_Layer: 0
+  m_Name: ObstacleField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675450859634797527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8329803555235079657}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3180460959754713957}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6891510098796856348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8329803555235079657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb5bfd0e36645741a4ae176fbade962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Runtime::Game.Obstacles.ObstacleField
+  _mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  _normalMaterial: {fileID: 2100000, guid: 0e2bbfd54c7d5094da09e229937fa2c5, type: 2}
+  _infectedMaterial: {fileID: 2100000, guid: 821f5d0aade67bd438ef15a3bd1854d0, type: 2}
+  _explosion: {fileID: 8739472932817947770}
+  _shadows: 1
+  _heightVariation: 0.15
+  _maxTilt: 7
+--- !u!1001 &1241293841068987363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 675450859634797527}
+    m_Modifications:
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923991694223664997, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+      propertyPath: m_Name
+      value: Explosion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+--- !u!4 &3180460959754713957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4403027640678705286, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+  m_PrefabInstance: {fileID: 1241293841068987363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8739472932817947770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7525847579033952153, guid: 5459d74210901404ba8ec7d031b6f790, type: 3}
+  m_PrefabInstance: {fileID: 1241293841068987363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7050e12b524dc3d44bdd22eca4f74cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game.Runtime::Game.Effects.ParticleBurst
